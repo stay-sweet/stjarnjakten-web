@@ -39,3 +39,7 @@ Existing app and metadata links to `/privacy/` and `/support/` continue to work.
 Stay Sweet
 
 info@staysweet.dev
+
+## Project knowledge and work
+
+North Production is the source of truth for current work, decisions and verification evidence: **Stjärnjakten (STJ)**, the StaySweet workspace (Project ID `ede96f47-e12c-4253-9a87-1448f6ad7993`). Read its Project context and [AGENTS.md](AGENTS.md) before starting. Existing technical references remain useful; keep new planning and status in North rather than parallel local files.
