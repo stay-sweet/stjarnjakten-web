@@ -10,6 +10,18 @@
   <link rel="alternate" hreflang="en" href="https://starhunt.staysweet.dev/en/privacy/">
   <link rel="alternate" hreflang="sv" href="https://starhunt.staysweet.dev/sv/privacy/">
   <link rel="alternate" hreflang="x-default" href="https://starhunt.staysweet.dev/privacy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Stjärnjakten">
+  <meta property="og:title" content="Integritetspolicy · Stjärnjakten">
+  <meta property="og:description" content="Så hanterar vi information, på ett begripligt sätt.">
+  <meta property="og:url" content="https://starhunt.staysweet.dev/sv/privacy/">
+  <meta property="og:image" content="https://starhunt.staysweet.dev/assets/app-icon.png">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Integritetspolicy · Stjärnjakten">
+  <meta name="twitter:description" content="Så hanterar vi information, på ett begripligt sätt.">
+  <meta name="twitter:image" content="https://starhunt.staysweet.dev/assets/app-icon.png">
   <link rel="icon" type="image/png" sizes="1024x1024" href="/assets/app-icon.png">
   <link rel="apple-touch-icon" href="/assets/app-icon.png">
   <link rel="stylesheet" href="/styles.css">
@@ -30,56 +42,78 @@
     <noscript><nav class="fallback-languages" aria-label="Språk"><a href="/en/privacy/" lang="en" hreflang="en">English</a><a href="/sv/privacy/" lang="sv" hreflang="sv">Svenska</a></nav></noscript>
   </header>
   <main id="content" class="shell privacy-page">
-    <header class="page-heading"><p class="eyebrow">Stjärnjakten</p><h1>Integritetspolicy</h1><p class="intro">Så hanterar vi information, på ett begripligt sätt.</p><p class="date">Senast uppdaterad: 14 september 2026</p></header>
+    <header class="page-heading"><p class="eyebrow">Stjärnjakten</p><h1>Integritetspolicy</h1><p class="intro">Så hanterar vi information, på ett begripligt sätt.</p><p class="date">Senast uppdaterad: 15 november 2026</p></header>
     <article class="prose">
-    <p>Den här policyn beskriver hur Stjärnjakten, som heter Star Hunt på engelska, hanterar information i appen för iPhone och iPad, i TestFlight-betan och på den här webbplatsen.</p>
-    <p>Appen tillhandahålls av <strong>Stay Sweet</strong> i Sverige. Utvecklaren är personuppgiftsansvarig för uppgifter som tas emot genom support och betatestning. Kontakt: <strong><a href="mailto:info@staysweet.dev">info@staysweet.dev</a></strong>.</p>
-    <div class="summary"><strong>Familjens vardagsinformation stannar på din enhet.</strong> Inget konto krävs. Appen skickar inte barnprofiler, uppdrag, stjärnor, mål eller historik till utvecklaren eller katalogtjänsten. Apple hanterar diagnostik från TestFlight separat, enligt beskrivningen nedan.</div>
+    <p>Den här policyn beskriver hur Stjärnjakten, som heter Star Hunt på engelska, hanterar information i apparna för iPhone, iPad och Android, under betatestning och på den här webbplatsen. Apparna finns ännu inte på App Store eller Google Play.</p>
+    <p>Appen tillhandahålls av <strong>Stay Sweet</strong> i Sverige. Utvecklaren är personuppgiftsansvarig för uppgifter som tas emot genom support, betatestning och valfri delning av familj. Kontakt: <strong><a href="mailto:info@staysweet.dev">info@staysweet.dev</a></strong>.</p>
+    <div class="summary"><strong>Familjens vardagsinformation stannar på din enhet.</strong> Inget konto krävs. Som standard skickar appen inte barnprofiler, uppdrag, stjärnor, mål eller historik till utvecklaren. Bara om du väljer att dela en familj med andra vuxna och enheter sparas familjens information på utvecklarens server, som beskrivs i avsnitt 3. Det finns ingen reklam och ingen spårning.</div>
 
     <h2>1. Information som sparas på din enhet</h2>
     <p>Appen sparar profilnamn, åldrar och valda ikoner; uppdragstexter, scheman och status; stjärnor; valda mål; historik över genomförda uppdrag och inlösta mål; samt appinställningar. Informationen används för appens funktioner för vardagsrutiner och framsteg. Ålder används på enheten för att välja lämpliga förslag.</p>
-    <p>Det finns inget familjekonto på en server och ingen löpande synkronisering mellan enheter. Appdata kan ingå i vanliga säkerhetskopior via iCloud eller dator, beroende på dina inställningar. Utvecklaren kan inte komma åt dessa säkerhetskopior.</p>
+    <p>På iPhone och iPad kan appdata ingå i vanliga säkerhetskopior via iCloud eller dator, beroende på dina inställningar. På Android kan enhetens säkerhetskopiering och enhetsöverföring innehålla appens lokala databas. Utvecklaren kan inte komma åt dessa säkerhetskopior. Vuxenkoden ingår inte i säkerhetskopior.</p>
     <p>Appen är gjord för en delad enhet. Den som använder barnläget kan växla mellan tillgängliga barnprofiler. Vuxenläget skyddar planering, godkännanden, profilhantering och radering. Det gör inte varje barns profil privat för andra som använder barnläget.</p>
 
     <h2>2. Vuxenkod och enhetens autentisering</h2>
-    <p>Vuxenkoden och appens inställning för biometrisk åtkomst lagras i Apples nyckelring med skydd som är knutet till denna enhet. De skickas inte till utvecklaren och överförs inte till en annan enhet genom nyckelringens synkronisering.</p>
-    <p>Om du aktiverar Face ID eller Touch ID sköter iOS autentiseringen. Appen får resultatet och får aldrig tillgång till ditt ansikte eller fingeravtryck. Återställning av en glömd vuxenkod använder iOS autentisering, vilket kan omfatta enhetens lösenkod. En betrodd enhetsägare kan därför återställa åtkomsten till vuxenläget.</p>
+    <p>På iPhone och iPad lagras vuxenkoden och inställningen för biometrisk åtkomst i Apples nyckelring med skydd som är knutet till enheten. På Android lagras koden bara som en saltad verifierare krypterad med Android Keystore, tillsammans med antal misslyckade försök, på en plats som är undantagen från säkerhetskopiering. De skickas inte till utvecklaren och överförs inte till en annan enhet.</p>
+    <p>Om du aktiverar Face ID, Touch ID eller biometri på Android sköter operativsystemet autentiseringen. Appen får resultatet och får aldrig tillgång till ditt ansikte eller fingeravtryck. Återställning av en glömd vuxenkod använder enhetens autentisering (lösenkoden i iOS eller skärmlåset i Android). En betrodd enhetsägare kan därför återställa åtkomsten till vuxenläget.</p>
 
-    <h2>3. Offentliga förslag och nätverksanslutningar</h2>
-    <p>Appen hämtar en offentlig katalog med uppdragsförslag, målförslag och ikoner från Convex. Förfrågan innehåller inget familjeinnehåll, barnets ålder, profilidentifierare eller någon identifierare för enheten eller installationen som appen har skapat. Förslagen filtreras på enheten. Katalogen följer också med appen och sparas lokalt så att vardagsanvändningen kan fortsätta utan internet.</p>
+    <h2>3. Valfri delning av familj</h2>
+    <p>Genom att dela en familj kan vuxna och barnens enheter arbeta med samma familj. Funktionen är avstängd som standard, kräver internetanslutning och finns för närvarande bara i utvecklingsversioner för testning. Din lokala familj stannar på enheten och laddas inte upp om du inte väljer att ansluta.</p>
+    <p>Om du ansluter en familj sparas följande på utvecklarens server, som drivs av Convex:</p>
+    <ul>
+      <li><strong>E-postadress</strong> för den som skapar familjen. Den används för inloggning med en engångskod. E-postmeddelandet med koden skickas via e-posttjänsten Resend. Andra vuxna och barnens enheter behöver ingen e-postadress. De ansluter med en engångskod och får anonyma identiteter.</li>
+      <li><strong>Visningsnamn</strong> som du väljer för profiler och vuxna (smeknamn rekommenderas), samt familjens profiler, uppdrag, scheman, stjärnor, mål, historik över genomförda uppdrag och vilka enheter som hör till familjen.</li>
+      <li><strong>Tokens för pushnotiser</strong> för enheter som aktiverar notiser. De skickas till Apples eller Googles pushtjänster så att en enhet kan få veta att något har ändrats. Notistexten innehåller inga namn och ingen uppdragstext.</li>
+      <li><strong>Tekniska poster</strong> som behövs för säker synkronisering, till exempel inloggningssessioner, enhetsregistreringar och kvitton på utförda åtgärder.</li>
+    </ul>
+    <p>Familjens information används bara för att driva familjen och säljs inte, används inte för reklam och delas inte med andra. Vuxna i familjen kan se familjens information, och den som har tillgång till en ansluten enhet kan se vad den enheten visar. Kameran kan användas för att skanna en anslutningskod (avsnitt 5).</p>
+
+    <h2>4. Påminnelser, offentliga förslag och meddelanden</h2>
+    <p><strong>Lokala påminnelser.</strong> Om du aktiverar valfria påminnelser om uppdrag schemalägger din enhet dem själv. Tid och text stannar på enheten. Ingenting skickas till någon server och inget konto behövs.</p>
+    <p><strong>Förslag och meddelanden.</strong> Appen hämtar en offentlig katalog med uppdragsförslag, målförslag och ikoner samt offentliga meddelanden från utvecklaren (till exempel nyheter om appen) från Convex. Förfrågningarna är anonyma. De innehåller inget familjeinnehåll, barnets ålder, profilidentifierare eller någon identifierare för enheten eller installationen som appen har skapat, och appen spårar inte vilka meddelanden du läser. Förslag och meddelanden filtreras eller visas på enheten. Katalogen följer också med appen och sparas lokalt så att vardagsanvändningen kan fortsätta utan internet.</p>
     <p>En internetanslutning innebär att anslutningens IP-adress och teknisk information om förfrågan blir tillgängliga för serverinfrastrukturen. Convex och dess infrastrukturleverantörer kan behandla denna information för att leverera och skydda tjänsten. Appen använder den inte för att bygga familjeprofiler eller spåra barn. Läs <a href="https://www.convex.dev/legal/privacy">Convex integritetsinformation</a>.</p>
 
-    <h2>4. Köp och Apples tjänster</h2>
-    <p>Appen använder Apples StoreKit för Familj-produktens tillgänglighet och köprättigheter. Om köp är tillgängliga i din version hanterar Apple betalningen och lämnar transaktionsinformation så att appen kan låsa upp eller återställa köpet. Utvecklaren får inte dina betalkortsuppgifter. En återställning av appens data upphäver inte ett köp hos Apple och raderar inte Apples transaktionsuppgifter. Läs <a href="https://www.apple.com/legal/privacy/">Apples integritetsinformation</a>.</p>
+    <h2>5. Behörigheter</h2>
+    <ul>
+      <li><strong>Notiser</strong> begärs bara när du aktiverar påminnelser eller familjenotiser. Appen fungerar utan dem.</li>
+      <li><strong>Kameran</strong> begärs bara när du skannar en anslutningskod. Du kan klistra in koden i stället. Bilder sparas eller skickas inte.</li>
+      <li><strong>Face ID, Touch ID eller biometri</strong> är valfritt och används bara för att öppna vuxenläget.</li>
+    </ul>
 
-    <h2>5. Diagnostik, TestFlight och återkoppling</h2>
-    <p>Appen innehåller ingen reklam, tredjepartsanalys eller programvara som spelar in hur du använder gränssnittet. Appens egen diagnostik använder Apples loggsystem på enheten och undviker familjens texter, vuxenkoder och beständiga profilidentifierare. Apple kan tillhandahålla diagnostikrapporter genom sina distributionstjänster enligt Apples tillämpliga inställningar och villkor.</p>
-    <p>När du använder TestFlight delar Apple automatiskt krasch- och användningsinformation med utvecklaren, inklusive tekniska uppgifter om enheten och appen. Namn och e-postadress kan vara synliga om du deltar genom en e-postinbjudan. Om du enbart ansluter via en offentlig länk visas de inte för utvecklaren. Återkoppling som du skickar kan innehålla kommentarer och skärmbilder. Utvecklaren använder uppgifterna för att utreda problem och förbättra appen och delar inte TestFlight-information med tredje part. Läs <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight och integritet</a>.</p>
+    <h2>6. Exportera mina uppgifter</h2>
+    <p>För en ansluten familj kan vuxna välja ”Exportera mina uppgifter” i Inställningar för att få en läsbar fil med den information om familjen som finns på servern. Filen skapas på begäran, skickas bara till den enhet som bad om den och sparas eller delas där du väljer. Uppgifter som bara finns på din enhet är redan dina och ingår inte i exporten.</p>
+
+    <h2>7. Köp och butikstjänster</h2>
+    <p>Appen använder Apples StoreKit på iPhone och iPad och Google Play Billing på Android för Familj-produktens tillgänglighet och köprättigheter. Om köp är tillgängliga i din version hanterar Apple eller Google betalningen och lämnar transaktionsinformation så att appen kan låsa upp eller återställa köpet. Utvecklaren får inte dina betaluppgifter och köpinformation skickas inte till utvecklarens server. En återställning av appens data upphäver inte ett köp och raderar inte butikens uppgifter. Läs <a href="https://www.apple.com/legal/privacy/">Apples integritetsinformation</a> och <a href="https://policies.google.com/privacy">Googles integritetspolicy</a>.</p>
+
+    <h2>8. Diagnostik, betatestning och återkoppling</h2>
+    <p>Appen innehåller ingen reklam, tredjepartsanalys, kraschrapportering från tredje part eller programvara som spelar in hur du använder gränssnittet. Appens egen diagnostik använder systemets loggning på enheten och undviker familjens texter, vuxenkoder och beständiga profilidentifierare. Apple och Google kan tillhandahålla diagnostikrapporter genom sina distributionstjänster enligt sina tillämpliga inställningar och villkor.</p>
+    <p>När du använder TestFlight delar Apple automatiskt krasch- och användningsinformation med utvecklaren, inklusive tekniska uppgifter om enheten och appen. Namn och e-postadress kan vara synliga om du deltar genom en e-postinbjudan. Om du enbart ansluter via en offentlig länk visas de inte för utvecklaren. Testare på Google Play omfattas av Googles testvillkor. Återkoppling som du skickar kan innehålla kommentarer och skärmbilder. Utvecklaren använder uppgifterna för att utreda problem och förbättra appen och delar inte betainformation med tredje part. Läs <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight och integritet</a>.</p>
     <p>Om du kontaktar supporten får utvecklaren din e-postadress och det du väljer att skicka. Undvik barns fullständiga namn, vuxenkoder och andra onödiga privata uppgifter i meddelanden och skärmbilder. Utvecklaren och den e-posttjänst som hanterar korrespondensen behandlar informationen för att besvara din fråga.</p>
 
-    <h2>6. Lagring och radering</h2>
-    <p>Familjeinformationen finns kvar på din enhet tills du raderar den. Öppna Profiler → Inställningar i vuxenläget och välj alternativet för att radera all data. En lyckad återställning tar bort profiler, uppdrag, stjärnor, mål, historik, uppgifter för vuxenåtkomst och appinställningar. En lokal kopia av den offentliga katalogen kan finnas kvar. Tidigare säkerhetskopior via iCloud eller dator samt Apples köpuppgifter hanteras separat och raderas inte av återställningen.</p>
-    <p>Utvecklaren behåller supportkorrespondens och eventuell separat sparad betaåterkoppling bara så länge det behövs för att besvara frågan, lösa det rapporterade problemet eller uppfylla en rättslig skyldighet, och raderar uppgifterna när dessa ändamål inte längre gäller. Uppgifter i Apples tjänster följer Apples lagringsregler. En lokal återställning av appen raderar inte TestFlight-uppgifter. Kontakta utvecklaren för att begära tillgång till eller radering av support- eller betauppgifter som utvecklaren har.</p>
+    <h2>9. Lagring och radering</h2>
+    <p>Familjeinformationen finns kvar på din enhet tills du raderar den. Öppna Inställningar i vuxenläget och välj alternativet för att radera all data. En lyckad återställning tar bort profiler, uppdrag, stjärnor, mål, historik, vuxenkoden och appinställningar. En lokal kopia av den offentliga katalogen kan finnas kvar. Säkerhetskopior av enheten och butikernas köpuppgifter hanteras separat och raderas inte av återställningen.</p>
+    <p>En ansluten familj finns kvar på servern tills den som skapade den raderar familjen eller sitt konto. När familjen raderas spärras åtkomsten för alla enheter direkt och dess profiler, historik, medlemmar och inbjudningar raderas. Kvarvarande tekniska poster rensas därefter i bakgrunden, oftast inom några minuter. När ett konto raderas tas inloggningen bort direkt. Vuxna kan lämna en familj och varje enhet kan koppla från sig själv. Stegen finns på sidan <a href="/sv/delete-account/">Radera konto och data</a>, som också förklarar hur du ber oss radera data utan appen. Leverantören kan spara infrastrukturens säkerhetskopior under en begränsad tid enligt sina egna regler.</p>
+    <p>Utvecklaren behåller supportkorrespondens och eventuell separat sparad betaåterkoppling bara så länge det behövs för att besvara frågan, lösa det rapporterade problemet eller uppfylla en rättslig skyldighet, och raderar uppgifterna när dessa ändamål inte längre gäller. Uppgifter i Apples och Googles tjänster följer deras lagringsregler. Kontakta utvecklaren för att begära tillgång till eller radering av support- eller betauppgifter som utvecklaren har.</p>
 
-    <h2>7. Barn och integritetsval</h2>
-    <p>Appen är avsedd för familjer med barn i åldern 3–12 år under vuxnas uppsikt. Barn behöver inget onlinekonto, ingen e-postadress och inget riktigt namn för att använda appen. Familjeuppgifter säljs inte, används inte för reklam och skickas inte till den offentliga katalogen. Vuxna kan välja smeknamn, hantera den lokala informationen, stänga av biometrisk åtkomst i Inställningar och radera appdata.</p>
+    <h2>10. Barn och integritetsval</h2>
+    <p>Appen är avsedd för familjer med barn i åldern 3–12 år under vuxnas uppsikt. Den installeras och hanteras av en vuxen. Barn behöver inget onlinekonto, ingen e-postadress och inget riktigt namn för att använda appen, och appen innehåller ingen reklam. Köp och externa länkar finns bakom vuxenområdet. Bara om en vuxen ansluter en familj skickas familjens information, inklusive barnens valda visningsnamn, framsteg och enhetsregistreringar, till servern, och då bara för att driva den familjen. Familjeuppgifter säljs inte, används inte för reklam och skickas inte till den offentliga katalogen. Vuxna kan välja smeknamn, hantera information, stänga av biometrisk åtkomst, exportera och radera data.</p>
 
-    <h2>8. Dina rättigheter</h2>
-    <p>För personuppgifter som tas emot genom support eller betatestning stödjer sig utvecklaren på det berättigade intresset av att besvara frågor och förbättra appen, med hänsyn till dina rättigheter, samt på rättsliga skyldigheter när sådana gäller. Inga automatiserade beslut med rättsliga eller liknande betydande följder fattas.</p>
-    <p>Beroende på tillämplig lag kan du begära tillgång, rättelse, radering, begränsning eller överföring av dina personuppgifter och invända mot behandlingen. Kontakta utvecklaren via e-postadressen ovan. Familjeuppgifter som bara finns på din enhet måste hanteras där eftersom utvecklaren saknar fjärråtkomst. Du kan också klaga hos <a href="https://www.imy.se/privatperson/dataskydd/dina-rattigheter/">Integritetsskyddsmyndigheten, IMY</a>, eller din lokala tillsynsmyndighet.</p>
+    <h2>11. Dina rättigheter</h2>
+    <p>För personuppgifter som tas emot genom support, betatestning eller delning av familj stödjer sig utvecklaren på fullgörandet av den tjänst du har begärt, det berättigade intresset av att besvara frågor och förbättra appen, med hänsyn till dina rättigheter, samt på rättsliga skyldigheter när sådana gäller. Inga automatiserade beslut med rättsliga eller liknande betydande följder fattas.</p>
+    <p>Beroende på tillämplig lag kan du begära tillgång, rättelse, radering, begränsning eller överföring av dina personuppgifter och invända mot behandlingen. Använd exporten och raderingsalternativen i appen eller kontakta utvecklaren via e-postadressen ovan. Familjeuppgifter som bara finns på din enhet måste hanteras där eftersom utvecklaren saknar fjärråtkomst. Du kan också klaga hos <a href="https://www.imy.se/privatperson/dataskydd/dina-rattigheter/">Integritetsskyddsmyndigheten, IMY</a>, eller din lokala tillsynsmyndighet.</p>
 
-    <h2>9. Den här webbplatsen och tjänsteleverantörer</h2>
-    <p>Den här webbplatsen finns på GitHub Pages. Den innehåller inga analysskript, annonser, formulär, inbäddade medier eller kakor som utvecklaren har lagt till. Om du väljer språk sparar webbplatsen endast det valet i webbläsarens lokala lagring. Du kan ta bort det genom att rensa webbplatsens data i webbläsaren. GitHub behandlar teknisk besöksinformation, inklusive IP-adresser, för att driva och skydda sina tjänster. Läs <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs integritetspolicy</a>.</p>
-    <p>Apple, Convex, GitHub och e-postleverantörer kan behandla tjänsteinformation i länder utanför Sverige eller EU/EES. Deras integritetsinformation beskriver hantering, lagring och skyddsåtgärder vid överföringar. Appen skickar inte familjeuppgifter till Convex eller GitHub.</p>
+    <h2>12. Den här webbplatsen och tjänsteleverantörer</h2>
+    <p>Webbplatsen finns på GitHub Pages. Den innehåller inga analysskript, ingen reklam, inga formulär, inga inbäddade media och inga kakor som utvecklaren har lagt till. Om du väljer språk minns webbplatsen bara den inställningen i webbläsarens lokala lagring. Du kan ta bort den genom att rensa webbplatsens data i webbläsaren. GitHub behandlar teknisk besöksinformation, inklusive IP-adresser, för att driva och skydda sina tjänster. Läs <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs integritetsmeddelande</a>.</p>
+    <p>Apple, Google, Convex, Resend, GitHub och leverantörer av e-posttjänster kan behandla tjänsteinformation i länder utanför Sverige eller EU/EES. Deras integritetsinformation beskriver hur de hanterar, lagrar och överför uppgifter med skyddsåtgärder. Familjeuppgifter skickas inte till GitHub, och skickas till Convex bara när du ansluter en familj.</p>
 
-    <h2>10. Ändringar och kontakt</h2>
-    <p>Sidan uppdateras när appens hantering av information ändras. Datumet ovan visar den senaste ändringen. Frågor och begäranden om integritet kan skickas till <strong><a href="mailto:info@staysweet.dev">info@staysweet.dev</a></strong>.</p>
-  
+    <h2>13. Ändringar och kontakt</h2>
+    <p>Den här sidan uppdateras när appens hantering av uppgifter ändras. Datumet ovan visar den senaste versionen. Frågor och önskemål om integritet kan skickas till <strong><a href="mailto:info@staysweet.dev">info@staysweet.dev</a></strong>.</p>
     </article>
   </main>
   <footer class="site-footer shell">
-    <div><span class="footer-brand">Stjärnjakten</span><span class="credit">Stay Sweet</span></div>
-    <nav aria-label="Information"><a href="/sv/privacy/">Integritetspolicy</a><a href="/sv/support/">Support</a><a href="mailto:info@staysweet.dev">info@staysweet.dev</a></nav>
+    <div><span class="footer-brand">Stjärnjakten</span><span class="credit">© 2026 StaySweet</span></div>
+    <nav aria-label="Information"><a href="/sv/privacy/">Integritetspolicy</a><a href="/sv/support/">Support</a><a href="/sv/delete-account/">Radera konto och data</a><a href="mailto:info@staysweet.dev">info@staysweet.dev</a></nav>
   </footer>
 </body>
 </html>
