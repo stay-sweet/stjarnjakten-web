@@ -2,6 +2,10 @@
 
 Read the root README when present and preserve existing repository conventions and verification commands.
 
+## Checks
+
+Run `python3 scripts/check.py` before committing; run one page with `python3 scripts/check.py sv/privacy`. Add a check there when a rule is added; keep English and Swedish pages in step.
+
 ## North workflow
 
 Use the installed North Production plugin automatically for work in this repository, without waiting for a reminder. Use **Stjärnjakten (STJ)** in the StaySweet workspace, Project ID `ede96f47-e12c-4253-9a87-1448f6ad7993`.
