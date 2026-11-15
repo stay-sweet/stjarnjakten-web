@@ -4,7 +4,7 @@ Read the root README when present and preserve existing repository conventions a
 
 ## Checks
 
-Run `python3 scripts/check.py` before committing; run one page with `python3 scripts/check.py sv/privacy`. Add a check there when a rule is added; keep English and Swedish pages in step.
+While editing a page, check just that page: `python3 scripts/check.py sv/privacy` (a substring of its path). Run the full `python3 scripts/check.py` once before committing. A page filter that matches nothing fails. Add a check there when a rule is added; keep English and Swedish pages in step.
 
 ## North workflow
 

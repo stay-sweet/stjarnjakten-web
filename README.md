@@ -24,10 +24,12 @@ The header, home-page card, favicon and Apple touch icon use `assets/app-icon.pn
 
 ## Checks
 
+Check one page while editing, then everything before committing:
+
 ```sh
-python3 scripts/check.py            # all static checks
 python3 scripts/check.py sv/privacy # one page (substring of its path)
 node --check language.js && git diff --check
+python3 scripts/check.py            # full gate: all static checks
 ```
 
 `scripts/check.py` verifies the required pages in both languages, working internal links, one `h1`, `lang`, `hreflang`, Open Graph/Twitter and light-only colour-scheme tags, Android coverage, no third-party requests, no Smart App Banner before an App Store ID exists, and that the policy still discloses family sharing, push, reminders and export. It uses only the Python standard library.

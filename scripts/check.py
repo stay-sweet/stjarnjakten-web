@@ -88,6 +88,11 @@ def check_page(rel):
 def main():
     wanted = sys.argv[1:]
     selected = lambda rel: not wanted or any(w in rel for w in wanted)
+    pages = [f"{lang}/{slug}/index.html" if slug else f"{lang}/index.html" for lang in LANGS for slug in SLUGS]
+    pages += [f"{slug}/index.html" if slug else "index.html" for slug in ENTRIES] + ["404.html"]
+    for w in wanted:
+        if not any(w in rel for rel in pages):
+            fail(w, "matches no page")
 
     for name in (".nojekyll", "CNAME", "404.html", "language.js", "styles.css", "assets/app-icon.png"):
         if not (ROOT / name).exists():
