@@ -119,6 +119,8 @@ def main():
             meta = {m.get("name") or m.get("property"): m.get("content") for m in page.metas}
             if meta.get("color-scheme") != "light":
                 fail(rel, 'meta color-scheme must be "light"')
+            if meta.get("theme-color") != "#326454":
+                fail(rel, 'meta theme-color must be the app accent "#326454"')
             for key in ("description", "og:title", "og:description", "og:url", "og:image", "og:locale", "twitter:card"):
                 if not meta.get(key):
                     fail(rel, f"missing meta {key}")

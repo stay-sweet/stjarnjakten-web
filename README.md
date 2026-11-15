@@ -32,7 +32,7 @@ node --check language.js && git diff --check
 python3 scripts/check.py            # full gate: all static checks
 ```
 
-`scripts/check.py` verifies the required pages in both languages, working internal links, one `h1`, `lang`, `hreflang`, Open Graph/Twitter and light-only colour-scheme tags, Android coverage, no third-party requests, no Smart App Banner before an App Store ID exists, and that the policy still discloses family sharing, push, reminders and export. It uses only the Python standard library.
+`scripts/check.py` verifies the required pages in both languages, working internal links, one `h1`, `lang`, `hreflang`, Open Graph/Twitter, light-only colour-scheme and accent `theme-color` tags, Android coverage, no third-party requests, no Smart App Banner before an App Store ID exists, and that the policy still discloses family sharing, push, reminders and export. It uses only the Python standard library.
 
 ## Hosting
 
